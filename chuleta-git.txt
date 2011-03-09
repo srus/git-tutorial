@@ -1,3 +1,15 @@
+##################################################
+##	Resumen comandos Git   			##
+##      ====================  			##
+##	         				##
+##	Sergio Rus 				##
+##	twitter.com/sergiorus 			##
+##	blog.sergiorus.com			##
+##	https://github.com/srus/taller-git	##
+##						##
+##################################################
+
+
 Configuración de git
 ====================
 # Para configuración específica del proyecto, quitar --global
