@@ -208,6 +208,14 @@ git rebase -i HASH
 # Aplicar los cambios introducidos por uno o varios commit creando un nuevo commit
 git cherry-pick HASH
 
+# Crear patches con los cambios de la rama actual respecto de la rama develop
+# Esto genera un archivo (patch) por cada commit, con el formato 00XX-<mensaje_commit>.patch
+git format-patch develop
+
+# Aplicar todos los parches almacenados en un directorio a la rama actual
+# Esto crea un commit por cada parche
+git am ruta_directorio/00*
+
 Git y Subversion (git-svn)
 ==========================
 # commit
