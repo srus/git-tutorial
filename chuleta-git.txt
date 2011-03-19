@@ -108,6 +108,17 @@ git config -l
 # info del repositorio remoto (p.e. para ver ramas remotas)
 git remote show origin
 
+# Añadir un repositorio remoto
+git remote add <nombre_repositorio>
+# Ejemplo:
+# Traer todos los cambios desde un repositorio remoto llamado "repo_ejemplo"
+git fetch repo_ejemplo
+# y luego aplicar los cambios de la rama remota "master" a la rama actual
+git merge repo_ejemplo/master
+
+# Eliminar un repositorio remoto (dejar de seguirlo)
+git remote rm <nombre_repositorio>
+
 # "congelar" y poner los cambios actuales a salvo, sin hacer commit, para volver más tarde a ellos
 git stash
 
