@@ -227,6 +227,17 @@ git format-patch develop
 # Esto crea un commit por cada parche
 git am ruta_directorio/00*
 
+Etiquetas (tags)
+================
+# etiquetar un commit
+git tag <nombre_etiqueta>
+
+# eliminar una etiqueta
+git tag -d <nombre_etiqueta>
+
+# enviar etiquetas al repositorio remoto
+git push <repositorio> --tags
+
 Git y Subversion (git-svn)
 ==========================
 # commit
