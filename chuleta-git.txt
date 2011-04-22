@@ -176,6 +176,9 @@ git branch -r -d origin/nombre_branch
 # necesario hacer "git pull" o "git push"
 git branch --track nuevo_branch origin/nuevo_branch
 
+# Elimina las ramas locales que ya no existen en el repositorio remoto.
+# Usar --dry-run para hacer una simulación antes.
+git remote prune origin
 
 Eliminación de archivos / Volviendo atrás
 =========================================
