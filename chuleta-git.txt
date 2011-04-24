@@ -241,6 +241,9 @@ git tag -d <nombre_etiqueta>
 # enviar etiquetas al repositorio remoto
 git push <repositorio> --tags
 
+# eliminar un tag remoto
+git push <repositorio> :refs/tags/<nombre_etiqueta>
+
 Git y Subversion (git-svn)
 ==========================
 # commit
