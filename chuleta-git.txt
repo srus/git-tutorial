@@ -1,12 +1,12 @@
 ##################################################
-##	Resumen comandos Git   			##
-##      ====================  			##
-##	         				##
-##	Sergio Rus 				##
-##	twitter.com/sergiorus 			##
-##	blog.sergiorus.com			##
-##	https://github.com/srus/taller-git	##
-##						##
+##  Resumen comandos Git                        ##
+##  ====================                        ##
+##                                              ##
+##  Sergio Rus                                  ##
+##  twitter.com/sergiorus                       ##
+##  blog.sergiorus.com                          ##
+##  https://github.com/srus/taller-git          ##
+##                                              ##
 ##################################################
 
 
@@ -167,6 +167,17 @@ git branch -d nombre_branch
 
 # eliminar un branch remoto (en el repositorio remoto)
 git push origin :nombre_branch
+# Nota:
+# En las últimas versiones de Git, por defecto se impide hacer push a un branch remoto
+# que no admite fast-forward (aunque se use --force), por ejemplo, en el caso de que se trate
+# de una rama "huérfana" cuya historia ha sido modificada. Esto se hace con una variable que
+# por seguridad se configura a un valor por defecto. Esta variable se puede modificar (por seguridad,
+# de forma temporal). Para ello hay que moverse al directorio donde reside el repositorio que se
+# quiere configurar, y poner:
+git config receive.denyDeleteCurrent ignore
+# Ahora ya se puede hacer push sobre cualquier rama remota.
+# Para volver a activar la protección:
+git config receive.denyDeleteCurrent refuse
 
 # eliminar un remote-tracking branch (origin/nombre_branch)
 git branch -r -d origin/nombre_branch
@@ -240,9 +251,6 @@ git tag -d <nombre_etiqueta>
 
 # enviar etiquetas al repositorio remoto
 git push <repositorio> --tags
-
-# eliminar un tag remoto
-git push <repositorio> :refs/tags/<nombre_etiqueta>
 
 Git y Subversion (git-svn)
 ==========================
