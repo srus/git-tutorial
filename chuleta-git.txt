@@ -162,6 +162,9 @@ git branch -r
 # listar todos los branch
 git branch -a
 
+# renombrar un branch
+git branch -m oldname newname
+
 # eliminar un branch
 git branch -d nombre_branch
 
