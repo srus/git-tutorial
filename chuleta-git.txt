@@ -2,10 +2,9 @@
 ##  Resumen comandos Git                        ##
 ##  ====================                        ##
 ##                                              ##
-##  Sergio Rus                                  ##
-##  twitter.com/sergiorus                       ##
-##  blog.sergiorus.com                          ##
-##  https://github.com/srus/taller-git          ##
+##  github.com/srus/taller-git                  ##
+##                                              ##
+##  Sergio Rus (sergiorus.com)                  ##
 ##                                              ##
 ##################################################
 
@@ -275,4 +274,3 @@ git svn fetch -rREVISION
 
 # actualizar proyecto local
 git svn rebase
-
